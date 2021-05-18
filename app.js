@@ -16,10 +16,10 @@ const apiRouter = require('./routes/index');
 const syncDatabase = async () => {
   //sync and seed
   try {
-    await db.sync({ force: true });
+    await db.sync();
     console.log('------Synced to db--------');
-    await seedDB();
-    console.log('--------Successfully seeded db--------');
+    // await seedDB();
+    // console.log('--------Successfully seeded db--------');
   } catch (err) {
     console.error('syncDB error:', err);
   }
@@ -57,7 +57,6 @@ const bootApp = async () => {
   await syncDatabase();
   await configureApp();
 };
-
 bootApp();
 
 const PORT = 5000;
