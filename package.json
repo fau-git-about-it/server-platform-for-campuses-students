@@ -1,30 +1,27 @@
 {
-  "name": "starter-server-new",
+  "name": "starter-server",
+  "engines": {
+    "node": "15.12.0",
+    "npm": "7.6.3"
+  },
   "version": "1.0.0",
-  "description": "new npm initialization for backend for webdev2021 final proj",
+  "description": "backend app for webdevsp21 final",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fau-git-about-it/server-platform-for-campuses-students.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/fau-git-about-it/server-platform-for-campuses-students/issues"
-  },
-  "homepage": "https://github.com/fau-git-about-it/server-platform-for-campuses-students#readme",
+  "author": "Your Name Here",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
     "express-async-handler": "^1.1.4",
-    "pg": "^8.6.0",
-    "pgtools": "^0.3.1",
-    "sequelize": "^6.6.2",
+    "pg": "^8.5.1",
+    "pgtools": "^0.3.0",
+    "sequelize": "^6.3.5",
     "student": "^1.0.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.6"
   }
 }
