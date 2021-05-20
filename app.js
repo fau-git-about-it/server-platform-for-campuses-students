@@ -1,7 +1,7 @@
 //import database setup utils
 const createDB = require('./database/utils/createDB');
 const seedDB = require('./database/utils/seedDB');
-// const PORT = process.env.PORT;
+//const PORT = process.env.PORT
 
 // Instantiate express application
 const express = require('express');
@@ -60,7 +60,7 @@ const bootApp = async () => {
 bootApp();
 
 const PORT = 5000;
-app.listen(PORT, console.log(`Server started on ${PORT}`));
+app.listen(process.env.port || PORT, console.log(`Server started on ${PORT}`));
 
 // if (PORT) {
 //   app.listen(PORT, () => console.log(`Listening on ${PORT}`));

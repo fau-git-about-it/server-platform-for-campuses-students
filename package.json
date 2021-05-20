@@ -14,7 +14,8 @@
     "express-async-handler": "^1.1.4",
     "pg": "^8.5.1",
     "pgtools": "^0.3.0",
-    "sequelize": "^6.3.5"
+    "sequelize": "^6.3.5",
+    "student": "^1.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
