@@ -3,7 +3,7 @@ const { dbName, dbUser, dbPwd } = require('./configDB');
 
 const config = {
   user: dbUser,
-  host: 'localhost',
+  host: 'crud-server-1.cpzcf4opn8s4.us-east-2.rds.amazonaws.com',
   port: 5432,
   password: dbPwd,
 };
